@@ -1,0 +1,107 @@
+* {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ffffff;
+  min-height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #efc987;
+}
+
+.container {
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 17px;
+  border-radius: 9px;
+}
+
+#Display-area {
+  width: 100%;
+  margin: 3vh 0;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(2, minmax(40px, auto));
+  word-wrap: break-word;
+  border-bottom: 1px rgb(255, 255, 255) solid;
+}
+
+#Display-area .currentInput {
+  text-align: right;
+  height: 8vh;
+  color: white;
+  font-size: xx-large;
+  line-height: 2;
+  word-wrap: break-word;
+  font-weight: bold;
+}
+
+#Display-area .answerScreen {
+  text-align: right;
+  color: rgb(66, 66, 66);
+  height: 7px;
+  line-height: 3;
+  font-size: larger;
+}
+
+.keypad-btns {
+  display: grid;
+  grid: repeat(5, 90px) / repeat(4, 130px);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+
+.keypad-btns button {
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #9a4d00;
+  color: #fff;
+  font-size: x-large;
+  font-weight: bold;
+}
+
+.keypad-btns .fun_btn {
+  color: #ffffff;
+  background: #4f2302;
+  font-weight: bold;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#clear {
+  background: rgb(38, 13, 0);
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: #131313;
+    align-items: flex-start;
+  }
+}
+
+.meta-link:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.meta-link > i,
+.meta-link > span {
+  height: 20px;
+  line-height: 20px;
+}
+
+.meta-link > span {
+  color: white;
+  font-family: "Rubik", sans-serif;
+  transition: color 600ms;
+}
